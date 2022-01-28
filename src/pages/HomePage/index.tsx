@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import SwiperCore, { Scrollbar, Autoplay } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -24,7 +23,6 @@ SwiperCore.use([Autoplay, Scrollbar]);
 interface HomePageProps {}
 
 function HomePage(props: HomePageProps) {
-  const navigate = useNavigate();
   const [animes, setAnimes] = useState<any>({
     carousel01: [],
     carousel02: [],
@@ -178,12 +176,12 @@ function HomePage(props: HomePageProps) {
 
       <section className="carousel-cards carousel-two">
         <span className="title-carousel">Continuar assistindo</span>
-        <CarouselCards />
+        <CarouselCards data={animes.carousel02} />
       </section>
 
       <section className="carousel-cards carousel-three">
         <span className="title-carousel">Em alta</span>
-        <CarouselCards />
+        <CarouselCards data={animes.carousel03} />
       </section>
     </Container>
   );

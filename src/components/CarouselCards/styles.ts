@@ -23,9 +23,9 @@ export const Container = styled.div`
   .swiper-button-prev {
     width: auto;
     height: auto;
-    padding: 42px 15px;
+    padding: 44px 15px;
 
-    top: 23px;
+    top: 22px;
     color: #ffffff;
     background-color: #00000078;
   }
@@ -36,7 +36,7 @@ export const Container = styled.div`
   }
 
   .swiper-slide {
-    height: 130px;
+    height: 230px;
 
     text-align: center;
     font-size: 18px;
@@ -54,6 +54,16 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (min-width: 1540px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      padding: 60px 15px;
+    }
+    .swiper-slide {
+      height: 163px;
+    }
   }
 `;
 
@@ -73,6 +83,8 @@ export const SlideItem = styled.div<ISlideItem>`
   background: ${({ bg }) => `url(${bg})`};
   background-size: cover;
   text-align: left;
+
+  cursor: pointer;
 
   span {
     font-weight: bold;
@@ -101,10 +113,10 @@ export const SlideItem = styled.div<ISlideItem>`
     top: 0;
     left: 0;
     background: linear-gradient(
-      350deg,
-      rgba(0, 0, 0, 0.5) 29.82%,
-      rgba(24, 26, 39, 0) 100%,
-      rgba(255, 255, 255, 0) 100%
+      360deg,
+      rgb(0 0 0 / 73%) 39.82%,
+      rgb(0 34 255 / 0%) 100%,
+      rgb(35 255 0 / 0%) 100%
     );
   }
 `;

@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { FreeMode, Navigation } from 'swiper';
 
@@ -24,19 +23,23 @@ export default function CarouselCards({ data }: IProps) {
         breakpoints={{
           '0': {
             slidesPerView: 1.5,
-            spaceBetween: 7,
+            spaceBetween: 12,
           },
           '640': {
             slidesPerView: 2,
-            spaceBetween: 7,
+            spaceBetween: 12,
           },
           '768': {
             slidesPerView: 4,
-            spaceBetween: 7,
+            spaceBetween: 12,
           },
           '1024': {
             slidesPerView: 5.1,
-            spaceBetween: 7,
+            spaceBetween: 12,
+          },
+          '1540': {
+            slidesPerView: 6.1,
+            spaceBetween: 12,
           },
         }}
         className="mySwiper"

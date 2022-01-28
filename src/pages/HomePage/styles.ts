@@ -248,8 +248,9 @@ export const Container = styled.div`
 
     span.title-carousel {
       margin-left: 70px;
+
       font-weight: 500;
-      font-size: 23px;
+      font-size: 26px;
       line-height: 25px;
       letter-spacing: -0.01em;
       color: #ffffff;
@@ -257,7 +258,7 @@ export const Container = styled.div`
   }
 
   .carousel-cards.carousel-one {
-    margin-top: -96px;
+    margin-top: -135px;
   }
 
   .carousel-cards.carousel-two {
@@ -268,7 +269,7 @@ export const Container = styled.div`
     margin-top: 55px;
   }
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 1540px) {
   }
 `;
 
